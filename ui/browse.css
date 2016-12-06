@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainbody { 
+  background: url('http://www.wallpapers4u.org/wp-content/uploads/quentin_tarantino_actor_director_jacket_pistol_pants_celebrity_hollywood_black_and_white_18775_1920x1080.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navi {
+  background: #232323;
+  height: 40px;
+  display: inline-block;
+  width:1300px;
+  position:relative;
+}
+
+.navi li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+  color:white;
+  width:auto;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.navi li a {
+  font-size: 16px; 
+  line-height: 35px;
+  float:left;
+  color:white;
+  width:auto;
+  padding: 0 20px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+}
+
+
+.search{
+     position: absolute;
+     font-family: Montserrat, sans-serif;
+     font-weight: bold;
+     top: 150px;
+     left: 30%;
+     font-size: 37px;
+     color: #ef631c;
+    }
+    
+.moviesearch {
+	
+	width: 600px;
+	height: 50px;
+	position: relative;
+	z-index: 2;
+	top: 205px;
+	left: 27%;
+    padding: 15px 0 15px 20px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    background: #1f7f5c;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.15s;
+
+}
+
+	
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+#search_text:focus {
+    background: rgb(64, 151, 119);
+}
+
+ul{
+	list-style-type: none;
+}
+
+.subnav {
+	
+	position: absolute;
+	top: 295px;
+	left:27%;
+    width: 600px;
+	height: auto;
+	opacity: 1;
+	transition: all 0.1s;
+	background: #232323;
+	font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    color:white;
+}
+.subnav li {
+	float: none;
+}
+.subnav li a {
+	border-bottom: 1px solid #2e2e2e;
+}
+
+
+

@@ -1,0 +1,130 @@
+
+	<html>
+	<head>
+
+	<link href = "/ui/registerstyle.css" rel ="stylesheet" />
+	<link href = "/ui/bootstrap.css" rel = "stylesheet" />
+	<link href = "http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet" />
+	<title> Register </title>
+	</head>
+	<body>
+	<div class="container">  
+    <div id="register">
+    <h3>Sign Up</h3>
+    <h4>Sign Up for loads of awesome stuff</h4>
+    <fieldset>
+      <input placeholder="Username" id="username" type="text" tabindex="1" autofocus/>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Password" id="password" type="password" tabindex="2" />
+    </fieldset>
+    <fieldset>
+      <input placeholder="Name" id ="name" type="text" tabindex="3" />
+    </fieldset>
+    <fieldset>
+      <input placeholder="Email" id="email" type="email" tabindex="4" />
+    </fieldset>
+    <!--<fieldset>
+      <p> Upload profile picture </p>
+      <input type = "file" id = "pic" accept="image/*"/>
+    </fieldset>-->
+    <fieldset>
+      <input type="submit" id = "register_btn" value="Register"/>
+    </fieldset>
+  </div>
+ 
+  
+</div>
+
+
+<script type = "text/javascript" src = "ui/register.js" >
+</script>
+
+
+</body> 
+</html>
+
+
+<!--
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Comperio Super Simple Instant Search</title>
+  </head>
+  <body>
+	<h1>Search Wikipedia!</h1>
+	<br />
+    <input id="searchterm" />
+    <button id="search">search</button>
+    <div id="results"></div>
+    <script>
+      $("#searchterm").keyup(function(e){
+        var q = $("#searchterm").val();
+        $.getJSON("https://api.themoviedb.org/3/search/movie?",
+        {
+          api_key: "9c6f4edf8b2c52678bf8e0885ff611d9",
+          query:q,
+          callback:"test"
+        },
+        function(data) {
+          $("#results").empty();
+          $("#results").append("<p>Results for <b>" + q + "</b></p>");
+          $.each(data.query.search, function(i,item){
+            $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title+ "</a><br>");
+          });
+        });
+      });
+    </script>
+    <div style="position:absolute;bottom:0;right:0;text-align:right">
+      <a href="http://blog.comperiosearch.com/author/fmcdowall/">Fergus McDowall</a> 2012<br>
+      <br>
+    </div>
+  </body>
+</html>
+-->
+
+<!-- <html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>jQuery Test</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <input id="searchterm" />
+    <button id="search">search</button>
+    <div id="results"></div>
+
+  <script type="text/javascript" charset="utf-8">
+    var api_key = '9c6f4edf8b2c52678bf8e0885ff611d9';
+
+
+  var button = document.getElementById('search');
+  button.onclick =function(){
+  var q = $("#searchterm").val();
+    $(document).ready(function(){
+      $.ajax({
+        url: 'http://api.themoviedb.org/3/search/movie?api_key=' + api_key + '&query='+q,
+        dataType: 'jsonp',
+        jsonpCallback: 'testing'
+      }).error(function() {
+        console.log('error')
+      }).done(function(response) {
+        for (var i = 0; i < response.results.length; i++) {
+         // $.each(response.query.search,function(i,results){
+          $('#search_results').append('<li>' + response.results[i].title + '</li>');
+        }
+      });
+    });
+  };
+  </script>
+
+  <h2>jQuery Test</h2>
+  <h3>Results</h3>
+
+  <p id="error"></p>
+  <ul id="search_results"></ul>
+
+</body>
+</html>
+-->

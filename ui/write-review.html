@@ -1,0 +1,84 @@
+<html>
+<head>
+<link href = "/ui/write-review.css" rel ="stylesheet" type = "text/css" />
+	<link href = "/ui/bootstrap.css" rel = "stylesheet" />
+	<link href = "http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet" />
+<title id = "review_title"> 
+Review for 
+</title>
+</head>
+<body>
+
+<div class="tab_bar">
+<ul class="navi">
+		
+		<li>
+			<a href="/recent"> RECENT REVIEWS </a>
+		</li>
+		<li>
+			<a href="#">USER</a>
+		</li>
+		
+</ul>
+</div>
+
+<div class = "col-sm-3">
+	<div class = "poster">
+		<img src = "" id = "poster">
+	</div>
+</div>
+
+<div class = "col-sm-9">
+
+	<ul class="text-details">
+		<li>
+		<h3><div class = "movie_name" id = "movie_name"></div> </h3>
+			
+		</li>
+		<br>
+		<br>
+		<br>
+		<li>
+			Directed by: &nbsp; &nbsp; <span class = "director" id = "director"></span>
+			
+			
+		</li>
+		
+		<br>
+		<li>
+		
+			Released on: &nbsp; &nbsp;<span class = "year_of_release" id = "year_of_release"></span>
+			
+		</li>
+		<br>
+		<li>
+		
+			Cast: &nbsp;&nbsp;<span class = "cast" id = "cast"></span>
+			
+			
+		</li>
+		<br>
+		<br>
+		<li>
+			Overview <div class = "description" id = "description"></span>
+			
+			<br>
+		</li>
+	<li>
+	<br>
+	<div class = "submit-review">
+		<textarea id = "review" placeholder = "Write your review here">
+		</textarea>
+		<br>
+		<input type="submit" value="Submit" id = "submit_btn" class ="submit_btn">
+	</div>
+	</li>
+	</ul>
+</div>
+
+
+
+<script type = "text/javascript" src = "/ui/write-review.js">
+</script>
+</body>
+</html>

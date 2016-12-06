@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+
+
+html {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+html { 
+  background: url('http://thesmashable.com/wp-content/uploads/2012/07/the_dark_knight_rises_hd_wallpapers_1920x1020_desktop_backgrounds_latest.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	
+}
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#login input[type="text"], #login input[type="password"], #login input[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#register input[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#login {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#register {
+	background:#F9F9F9;
+	padding:5px;
+	margin:50px 0;
+}
+
+#login h3 {
+	color: #ff9966;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	font-weight: bold;
+}
+
+#login h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+	text-align:center;
+}
+
+#register h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+	text-align:center;
+}
+
+fieldset {
+	border: medium none ;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#login input[type="text"], #login input[type="password"] {
+	width:100%;
+	border:1px solid #CCCCCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#login input[type="text"]:hover, #login input[type="password"]:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#login textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#login input[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#register input[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#06d849;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#login input[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#register input[type="submit"]:hover {
+	background:#03842c;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+
+#login input[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#register input[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#login input:focus, #login textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}

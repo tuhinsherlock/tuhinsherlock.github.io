@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<link href = "/ui/browse.css" rel ="stylesheet" />
+	<link href = "/ui/bootstrap.css" rel = "stylesheet" />
+	<link href = "http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet" />
+	<style>
+	.livesearch li a:visited, a:link, a:hover, a:active{
+		color:#FFFFFF;
+		text-decoration: none !important;
+		width:600px;
+		display: inline-block;
+	}
+		</style>
+		</head>
+<body>
+<div class="tab_bar">
+<ul class="navi">
+		
+		<li>
+			<a href="/recent"> RECENT REVIEWS </a>
+		</li>
+		<li>
+			<a href="#" id='userlink'><span id='tabbar_username'>USER</span></a>
+		</li>
+		
+</ul>
+</div>
+
+<div class="mainbody">
+<div class="search">
+SEARCH A MOVIE
+</div>
+
+<input type="text" id = "movie_name" class="moviesearch" placeholder="Enter Movie Name">
+<br>
+
+<ul class="subnav">
+<div id = "livesearch">
+</div>
+</ul>
+</div>
+<script src="/ui/browse.js" type = "text/javascript"> 
+</script>
+</body>
+</html>
